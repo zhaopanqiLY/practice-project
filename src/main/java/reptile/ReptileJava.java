@@ -16,13 +16,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * java爬虫小示例
+ * java爬虫小示例 不知道为什么会报错，看着不舒服先注释掉
  * @author : zhaopanqi
  * @date : Created in 2019/12/19
  */
 public class ReptileJava {
 
-    public static void main(String[] args){
+    /*public static void main(String[] args){
         try {
             // 小说目录地址
             URL url = new URL("https://www.biqudu.com/43_43821/");
@@ -119,6 +119,6 @@ public class ReptileJava {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
 }
