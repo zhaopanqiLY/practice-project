@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
 public class ReptileJava {
 
     public static void main(String[] args){
-        try {
+        /*try {
             // 小说目录地址
             URL url = new URL("https://www.biqudu.com/43_43821/");
 
@@ -80,10 +80,10 @@ public class ReptileJava {
             bw.close();
         } catch (Exception e){
             e.printStackTrace();
-        }
+        }*/
     }
 
-    final static HostnameVerifier DO_NOT_VERIFY = new HostnameVerifier() {
+    /*final static HostnameVerifier DO_NOT_VERIFY = new HostnameVerifier() {
         @Override
         public boolean verify(String hostname, SSLSession session) {
             return true;
@@ -119,6 +119,6 @@ public class ReptileJava {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
 }
