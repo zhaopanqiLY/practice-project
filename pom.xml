@@ -8,5 +8,91 @@
     <artifactId>practice-project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <!--development/test/production-->
+        <profiles.active>test</profiles.active>
+        <spring.version>4.3.9.RELEASE</spring.version>
+        <aspectj.version>1.8.13</aspectj.version>
+        <junit.version>4.12</junit.version>
+        <logback.version>1.2.3</logback.version>
+        <mysql.version>5.1.37</mysql.version>
+        <mybatis.version>3.4.1</mybatis.version>
+        <mybatissping.version>1.3.0</mybatissping.version>
+        <commonsio.version>2.4</commonsio.version>
+        <commonsfileupload.version>1.3.1</commonsfileupload.version>
+        <commonscollections.version>3.2.2</commonscollections.version>
+        <jsonlib.version>2.4</jsonlib.version>
+        <fastjson.version>1.2.31</fastjson.version>
+        <freemarker.version>2.3.26-incubating</freemarker.version>
+        <springredis.version>1.8.4.RELEASE</springredis.version>
+        <springmongoDB.version>1.10.4.RELEASE</springmongoDB.version>
+        <mongoDBdriver.version>3.6.0</mongoDBdriver.version>
+    </properties>
+
+    <dependencies>
+        <!-- Spring start-->
+        <!-- Spring核心 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- Spring repository-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Spring mongoDB begin -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+            <version>${springmongoDB.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>mongo-java-driver</artifactId>
+                    <groupId>org.mongodb</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb-cross-store</artifactId>
+            <version>${springmongoDB.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>aspectjweaver</artifactId>
+                    <groupId>org.aspectj</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>aspectjrt</artifactId>
+                    <groupId>org.aspectj</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>${mongoDBdriver.version}</version>
+        </dependency>
+        <!-- Spring mongoDB end -->
+    </dependencies>
+
 
 </project>
