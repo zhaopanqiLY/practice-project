@@ -11,7 +11,7 @@
     <properties>
         <!--development/test/production-->
         <profiles.active>test</profiles.active>
-        <spring.version>4.3.9.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <aspectj.version>1.8.13</aspectj.version>
         <junit.version>4.12</junit.version>
         <logback.version>1.2.3</logback.version>
